@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <style>
+        .top {
+            margin-top: 40px;
+            clear: both;
+        }
+        
+        .title {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            justify-content: space-between;
+            text-align: center;
+            font-family: "微软雅黑";
+            font-weight: bolder;
+            font-size: 15px;
+            border-bottom: 1px solid #6641E2;
+            background-color: aquamarine
+        }
+        
+        .neirong {
+            display: flex;
+            justify-content: space-between;
+            font-family: "微软雅黑";
+            text-align: center;
+            font-size: 15px;
+            font-weight: bolder;
+            border-bottom: 1px solid #222222;
+        }
+        
+        .title #xuhao,
+        .neirong #xuhao {
+            width: 10%;
+        }
+        
+        .title #sname,
+        .neirong #sname {
+            width: 70%;
+        }
+        
+        .title #price,
+        .neirong #price {
+            width: 20%;
+        }
+        
+        .neirong #price input {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            height: 25px;
+        }
+        
+        .time {
+            font-family: "微软雅黑";
+            font-feature-settings: initial;
+            font-weight: bold;
+            border-bottom: 1px solid #FF0000;
+        }
+        
+        .foot {
+            width: 100%;
+            height: 35px;
+            background-color: crimson;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #zja a,
+        #del a,
+        #ok a {
+            color: black;
+            font-weight: bold;
+        }
+        
+        #zja,
+        #del,
+        #ok {
+            background-color: #dddddd;
+        }
+        
+        .time {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            background-color: coral;
+        }
+        
+        .qnr {
+            margin-bottom: 35px;
+        }
+        
+        .rtu {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">大易鑫收货数据表</h1>
+    </header>
+    <div class="top">
+
+    </div>
+    <div class="rtu">
+        <div class="time">
+            <div class="gtime">
+
+            </div>
+        </div>
+    </div>
+    <div style="position: relative;width: 100%;height: 22px;">
+        <div class="title">
+            <div id="xuhao">
+                序号
+            </div>
+            <div id="sname">
+                名称
+            </div>
+            <div id="price">
+                价格(元)
+            </div>
+        </div>
+    </div>
+
+    <div class="mui-android">
+        <div class="qnr">
+
+        </div>
+        <div class="foot">
+            <button id="zja"><a href="tel:13434936534">联系收货</a></button>
+            <button id='del'><a href="tel:13434936534">问题反馈</a></button>
+            <button id='ok'><a>我的</a></button>
+        </div>
+    </div>
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/mui.enterfocus.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/indexa.js"></script>
+    <script type="text/javascript" src="../js/axios.min.js">
+    </script>
+</body>
+
+</html>

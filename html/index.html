@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <style>
+        .top {
+            margin-top: 40px;
+        }
+        
+        .title {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            font-family: "微软雅黑";
+            font-weight: bolder;
+            font-size: 15px;
+            border-bottom: 1px solid #6641E2;
+        }
+        
+        .neirong {
+            display: flex;
+            justify-content: space-between;
+            font-family: "微软雅黑";
+            text-align: center;
+            font-size: 15px;
+            font-weight: bolder;
+            border-bottom: 1px solid #222222;
+        }
+        
+        .title #xuhao,
+        .neirong #xuhao {
+            width: 10%;
+        }
+        
+        .title #sname,
+        .neirong #sname {
+            width: 70%;
+        }
+        
+        .title #price,
+        .neirong #price {
+            width: 20%;
+        }
+        
+        .qnr {
+            margin-bottom: 35px;
+        }
+        
+        .neirong div input {
+            margin: 0;
+            padding: 0;
+            /* border: 0;*/
+            height: 25px;
+            text-align: center;
+            border-left: 3px solid #ff00;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 0;
+        }
+        
+        .foot {
+            width: 100%;
+            height: 35px;
+            background-color: crimson;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .foot button {
+            border-radius: 25%;
+            margin: 2px 0;
+        }
+        
+        .rtu {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+        }
+        
+        .time {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            background-color: coral;
+        }
+        
+        #zja,
+        #del,
+        #ok {
+            background-color: #dddddd;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">大易鑫收货数据更新</h1>
+    </header>
+    <div class="top">
+    </div>
+    <div class="rtu">
+        <div class="time">
+            <div class="gtime"></div>
+            <button class="cz">重置价格</button>
+        </div>
+    </div>
+    <div class="mui-android">
+        <div class="title">
+            <div id="xuhao">
+                序号
+            </div>
+            <div id="sname">
+                名称
+            </div>
+            <div id="price">
+                价格(元)
+            </div>
+        </div>
+        <div class="qnr">
+
+        </div>
+    </div>
+    <div class="foot">
+        <button id="zja">增加</button>
+        <button id='del'>除空内容</button>
+        <button id='ok'>完成</button>
+    </div>
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/mui.enterfocus.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/axios.min.js"></script>
+</body>
+
+</html>

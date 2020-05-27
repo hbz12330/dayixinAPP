@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="js/axios.min.js"></script>
+    <script>
+        window.onload = function() {
+            axios({
+                url: 'https://passport.500.com/port/checkisshowverify.php',
+                method: 'GET',
+                /* headers: {
+                     //'Content-Type': 'multipart/form-data'
+                     'Content-Type': "application / x - javascript"
+                 },*/
+                header: ("Access-Control-Allow-Origin: *")
+
+            }).then(result => {
+                console.log(result)
+            })
+        }
+    </script>
+</body>
+
+</html>
